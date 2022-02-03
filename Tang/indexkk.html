@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img id="mc" src="Logo-MC-Blue-nobackground.png" alt="">
+    <div class="CT">
+        <h1>Animated Image Gallery</h1>
+        <div class="container">
+            <div class="box">
+                <img src="https://source.unsplash.com/1000x800">
+            </div>
+            <div class="box">
+                <img src="https://source.unsplash.com/1000x802">
+            </div>
+            <div class="box">
+                <img src="https://source.unsplash.com/1000x804">
+            </div>
+            <div class="box">
+                <img src="https://source.unsplash.com/1000x806">
+            </div>
+        </div>
+        <div class="container">
+            <div class="box">
+                <img src="https://source.unsplash.com/1000x801">
+            </div>
+            <div class="box">
+                <img src="https://source.unsplash.com/1000x808">
+            </div>
+            <div class="box">
+                <img src="https://source.unsplash.com/1000x809">
+            </div>
+            <div class="box">
+                <img src="https://source.unsplash.com/1000x805">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<style>
+    #mc {
+        width: 5%;
+        height: 5%;
+        float: right;
+    }
+    
+    body {
+        background-color: rgb(235, 235, 235);
+    }
+    
+    h1 {
+        margin: auto;
+        text-align: center;
+        padding: 20px;
+        color: #484848;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: monospace;
+        letter-spacing: 7px;
+        cursor: pointer
+    }
+    
+    .CT {
+        margin: auto;
+        width: 60%;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.582);
+    }
+    
+    .container {
+        display: flex;
+        width: 100%;
+        padding: 4% 2%;
+        box-sizing: border-box;
+        height: 70vh;
+        background-color: white;
+    }
+    
+    .box {
+        flex: 1;
+        overflow: hidden;
+        transition: .5s;
+        margin: 0 2%;
+        box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
+        line-height: 0;
+    }
+    
+    .box>img {
+        width: 100%;
+        height: calc(100% - 10vh);
+        object-fit: cover;
+        transition: .5s;
+    }
+    
+    .box>span {
+        font-size: 3.8vh;
+        display: block;
+        text-align: center;
+        height: 10vh;
+        line-height: 2.6;
+    }
+    
+    .box:hover {
+        flex: 1 1 50%;
+    }
+    
+    .box:hover>img {
+        width: 100%;
+        height: 100%;
+    }
+</style>
